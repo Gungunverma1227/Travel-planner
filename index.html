@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner</title>
+    <!-- add your logo here -->
+    <!-- <link rel="icon" href="images/logo.png" type="image/x-icon"> -->
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <img src="./images/logo.png" alt="IntelliTrip Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-overlay">
+            <div class="banner-details">
+                <h1 class="banner-heading" data-aos="fade-up" data-aos-duration="1000">
+                    Explore The Beauty of INDIA
+                </h1>
+                <button class="btn" id="createTripBtn">Create a Trip</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <i class="fa-solid fa-globe icon"></i>
+        <p>
+            <span class="highlight">Travel</span> is more than just moving from place to place—it's about the stories
+            you collect, the cultures you embrace, and the memories you treasure. Whether you're chasing sunsets,
+            climbing peaks, or wandering through hidden streets, let your journey redefine adventure. Discover, explore,
+            and leave footprints that inspire!
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id = "gallery">
+        <h1 class="gallery-heading" data-aos="fade-up" data-aos-duration="1000">Gallery</h1>
+        <img class="gall-img" data-aos="fade-up" data-aos-duration="1000" src="./images/gallery1.jpg"
+            alt="Scenic view 1">
+        <img class="gall-img" data-aos="fade-up" data-aos-duration="1000" src="./images/gallery2.jpg"
+            alt="Scenic view 2">
+        <img class="gall-img" data-aos="fade-up" data-aos-duration="1000" src="./images/gallery3.jpg"
+            alt="Scenic view 3">
+        <img class="gall-img" data-aos="fade-up" data-aos-duration="1000" src="./images/gallery4.jpg"
+            alt="Scenic view 3">
+        <img class="gall-img" data-aos="fade-up" data-aos-duration="1000" src="./images/gallery5.jpg"
+            alt="Scenic view 3">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left: Brand -->
+            <div class="footer-section">
+                <h2 class="footer-title">IntelliTrip</h2>
+                <p class="footer-text">Explore the world with us.</p>
+            </div>
+
+            <!-- Middle: Links -->
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Icons -->
+            <div class="footer-section social-icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Travel Planner. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+     <script>
+        document.getElementById("createTripBtn").addEventListener("click", function () {
+            window.location.href = "form.html";
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
